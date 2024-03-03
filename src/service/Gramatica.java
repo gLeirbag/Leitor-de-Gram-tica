@@ -63,19 +63,36 @@ public class Gramatica {
 	}
 	
 	
+	/**
+	 * Verifica se um símbolo é terminal ou não terminal.
+	 * 
+	 * @param c é o símbolo a ser verificado.
+	 * @return true se o símbolo é terminal, false caso não terminal.
+	 */
 	private boolean isTerminal(Character c) {
+		// É um terminal caso seja um dígito ou uma letra minúscula.
 		if(Character.isDigit(c) || Character.isLowerCase(c)) { //Se for um dígito ou uma letra minúscula, então é um símbolo terminal
 			return true;
 		}
+		// É um não terminal caso seja uma letra maiúscula.
 
 		return false;
 
 	}
 
-	public static ArrayList<String> getRegrasUsadas() {
+	/**
+	 * Retorna as regras de produção usadas para gerar a palavra.
+	 * 
+	 * @return lista de regras de produção usadas.
+	 */
+	public static List<String> getRegrasUsadas() {
 		Collections.reverse(regrasUsadas);
 		return regrasUsadas;
 	}
+	
+	/**
+	 * Limpa a lista de regras usadas.
+	 */
 	public static void clearRegrasUsadas() {
 		regrasUsadas.clear();
 	}
