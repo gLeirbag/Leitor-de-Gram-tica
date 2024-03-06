@@ -1,17 +1,17 @@
-# Leitor De Gram·tica
+# Leitor De Gram√°tica
 
 ## Tarefa
 
-1. Desenvolva um programa que leia um arquivo texto contendo uma gram·tica linear ‡ direita.
-2. Leia uma palavra via ambiente gr·fico.
-3. Verifique se a palavra pertence ‡ linguagem gerada pela gram·tica.
-4. O sistema deve mostrar a sequÍncia  de produÁıes que geram a palavra.
+1. Desenvolva um programa que leia um arquivo texto contendo uma gram√°tica linear √† direita.
+2. Leia uma palavra via ambiente gr√°fico.
+3. Verifique se a palavra pertence √† linguagem gerada pela gram√°tica.
+4. O sistema deve mostrar a sequ√™ncia  de produ√ß√µes que geram a palavra.
 
 
-- Os sÌmbolos n„o-terminais devem estar em mai˙sculas, enquanto os terminais devem estar em min˙sculas.
-- Pode haver espaÁos em branco dentro das produÁıes. Mas n„o pode haver espaÁos em branco entre "->".
-- O arquivo n„o pode conter produÁıes repetidas.
-- Toda produÁ„o deve ter a forma geral: "N -> tN". Onde no lado esquerdo est· apenas um n„o-terminal, e no lado direito est· um terminal seguido de um n„o-terminal (ou apenas um terminal).
+- Os s√≠mbolos n√£o-terminais devem estar em mai√∫sculas, enquanto os terminais devem estar em min√∫sculas.
+- Pode haver espa√ßos em branco dentro das produ√ß√µes. Mas n√£o pode haver espa√ßos em branco entre "->".
+- O arquivo n√£o pode conter produ√ß√µes repetidas.
+- Toda produ√ß√£o deve ter a forma geral: "N -> tN". Onde no lado esquerdo est√° apenas um n√£o-terminal, e no lado direito est√° um terminal seguido de um n√£o-terminal (ou apenas um terminal).
 - O arquivo pode conter linhas em branco.
 - Havendo algum erro no arquivo, o sistema deve mostrar uma mensagem de erro.
 
@@ -25,19 +25,19 @@ S    ->       1S
 S ->   0
 ```
 
-## Minha SoluÁ„o
+## Minha Solu√ß√£o
 
-![imagem](/example/screenshot.png]
+![imagem](/example/screenshot.png)
 
 ### Arquitetura
 
-A minha soluÁ„o considera que o n„o-terminal inicial È sempre "S".
+A minha solu√ß√£o considera que o n√£o-terminal inicial √© sempre "S".
 
-A arquitetura foi dividida em 2 camadas: Uma visual e outra lÛgica.
-A camada lÛgica conta com uma classe para ler o arquivo e outra para verificar a palavra.
+A arquitetura foi dividida em 2 camadas: Uma visual e outra l√≥gica.
+A camada l√≥gica conta com uma classe para ler o arquivo e outra para verificar a palavra.
 
-Cada funÁ„o est· documentada no cÛdigo fonte.
-Na pasta * examples * h· um exemplo de gram·tica correta, tente verificar a palavra "batata". H· tambÈm exemplos de arquivos errados.
-Os arquivos de gram·tica s„o do formato **.txt**.
+Cada fun√ß√£o est√° documentada no c√≥digo fonte.
+Na pasta * examples * h√° um exemplo de gram√°tica correta, tente verificar a palavra "batata". H√° tamb√©m exemplos de arquivos errados.
+Os arquivos de gram√°tica s√£o do formato **.txt**.
 
 
