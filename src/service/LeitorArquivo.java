@@ -156,8 +156,8 @@ public class LeitorArquivo {
 				
 				// Else referente ao if que checa se a linha contém a seta.
 				else {
-					throw new Exception("Gramática Inválida, não foi encontrada o Simbolo -> em nenhuma linha; linha = "
-							+ contLinha);
+					if (!linha.isBlank()) // Se a linha estiver vazia, pula para a próxima.
+						throw new Exception("Gramática Inválida, não foi encontrada o Simbolo '->'; linha = "+ contLinha);
 				}
 				// Incrementa o contador de linhas.
 				contLinha++;

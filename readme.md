@@ -27,11 +27,17 @@ S ->   0
 
 ## Minha Solução
 
+![imagem](/example/screenshot.png]
+
 ### Arquitetura
 
 A minha solução considera que o não-terminal inicial é sempre "S".
 
 A arquitetura foi dividida em 2 camadas: Uma visual e outra lógica.
 A camada lógica conta com uma classe para ler o arquivo e outra para verificar a palavra.
+
+Cada função está documentada no código fonte.
+Na pasta * examples * há um exemplo de gramática correta, tente verificar a palavra "batata". Há também exemplos de arquivos errados.
+Os arquivos de gramática são do formato **.txt**.
 
 
