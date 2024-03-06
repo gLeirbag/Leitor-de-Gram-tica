@@ -29,6 +29,8 @@ S ->   0
 
 ### Arquitetura
 
+A minha solução considera que o não-terminal inicial é sempre "S".
+
 A arquitetura foi dividida em 2 camadas: Uma visual e outra lógica.
 A camada lógica conta com uma classe para ler o arquivo e outra para verificar a palavra.
 

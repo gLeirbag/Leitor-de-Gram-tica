@@ -15,6 +15,10 @@ import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * JDialog que exibe uma mensagem de boas vindas ao usuário. Somente para testes.
+ * 
+ */
 public class OlaMundo extends JDialog {
 	
 	/**

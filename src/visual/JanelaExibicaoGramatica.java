@@ -18,7 +18,9 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.UIManager.LookAndFeelInfo;
 
 
-
+/**
+ * Janela que exibe a gramática carregada
+ */
 public class JanelaExibicaoGramatica extends JDialog {
 
 	private static final long serialVersionUID = 1L;
